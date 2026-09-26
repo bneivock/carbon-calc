@@ -13,10 +13,16 @@ public class Main{
         int AC = Integer.valueOf(scanner.nextLine());
         System.out.println("True or false, Do you charge your phone every day? ");
         boolean phone = Boolean.valueOf(scanner.nextLine());
+        System.out.println("How  many hours a day do you use your TV?");
+        int TV = Integer.valueOf(scanner.nextLine());
+        System.out.println("how many showers do you take in a day?");
+        int shower = Integer.valueOf(scanner.nextLine());
         int caruse = car * 200;
         int ACuse = AC * 350;
         int beefuse = beef * 6800;
-        int total = ACuse + caruse + beefuse;
+        int TVuse = TV * 30;
+        int showeruse = shower * 400;
+        int total = ACuse + caruse + beefuse + TVuse + showeruse;
         if (phone) {
             total += 10;
         }
