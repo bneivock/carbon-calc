@@ -20,6 +20,7 @@ public class Main{
         if (phone) {
             total += 10;
         }
-        System.out.println("You produce on average " + total +" grams of CO2 per day");
+        double totalkg = total / 1000.0;
+        System.out.println("You produce on average " + totalkg +" kilograms of CO2 per day");
     }
 }
